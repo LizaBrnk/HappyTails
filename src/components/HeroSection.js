@@ -6,17 +6,19 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src="/videos/video-2.mp4" autoPlay loop muted/>
-      <h1>ADVETURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <video src='/videos/cat-video2.mp4' autoPlay loop muted/>
+      <h1>SUPPORT ANIMALS</h1>
+      <p>Your kindness can save a life.</p>
       <div className='hero-btns'>
-        <Button className='btns' buttonStyle='btn--outline'
+        <Button className='btns' 
+        buttonStyle='btn--outline'
         buttonSize='btn--large'> 
-        GET STARTED
+        DONATE
         </Button>
-        <Button className='btns' buttonStyle='btn--primary'
+        <Button className='btns' 
+        buttonStyle='btn--pimary'
         buttonSize='btn--large'> 
-        WATCH TARILER <i className='far fa-paly-circle'/>
+        WATCH TARILER <i className='far fa-play-circle'/>
         </Button>
       </div>
     </div>
