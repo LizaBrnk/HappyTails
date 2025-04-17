@@ -13,13 +13,13 @@ function Cards() {
                     src="images/welfare-cat.jpg"
                     text="Together we can change someone's life."
                     label='Animal'
-                    path='/services'
+                    path='/animals'
                 />
                 <CardItem 
                     src="images/not-dog.jpg"
                     text="Together we can change someone's life."
                     label='Animal'
-                    path='/services'
+                    path='/animals'
                 />
             </ul>
             <ul className="cards__items">
@@ -27,13 +27,13 @@ function Cards() {
                     src="images/shelter-cat.jpg"
                     text="Together we can change someone's life."
                     label='Animal'
-                    path='/services'
+                    path='/animals'
                 />
                 <CardItem 
                     src="images/dog.jpg"
                     text="Together we can change someone's life."
                     label='Animal'
-                    path='/services'
+                    path='/animals'
                 />
             </ul>
         </div>
