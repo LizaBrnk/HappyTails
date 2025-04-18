@@ -6,7 +6,8 @@
   }
   
   .home,
-  .animals,
+  .help-animals,
+  .adopt-animals,
   .about,
   .sign-up {
     display: flex;
@@ -16,7 +17,16 @@
     font-size: 3rem;
   }
   
-  .animals {
+  .help-animals {
+    background-image: url('/public/images/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .adopt-animals {
     background-image: url('/public/images/img-2.jpg');
     background-position: center;
     background-size: cover;

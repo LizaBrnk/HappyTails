@@ -15,11 +15,6 @@ function HeroSection() {
         buttonSize='btn--large'> 
         DONATE
         </Button>
-        <Button className='btns' 
-        buttonStyle='btn--pimary'
-        buttonSize='btn--large'> 
-        WATCH TARILER <i className='far fa-play-circle'/>
-        </Button>
       </div>
     </div>
   )

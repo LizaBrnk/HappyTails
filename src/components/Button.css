@@ -3,7 +3,7 @@
 }
 
 .btn {
-    padding: 8px 20 px;
+    padding: 6px 20px;
     border-radius: 2px;
     outline: none;
     border: none;
@@ -32,7 +32,7 @@
 
 .btn--large {
     padding: 12px 26px
-    font-size 20px;
+    font-size 40px;
 }
 
 .btn--medium:hover, 
