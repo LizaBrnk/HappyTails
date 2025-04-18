@@ -1,6 +1,14 @@
 import React from "react";
 import '../../App.css';
+import Footer from '../Footer';
 
-export default function AboutUs(){
-    return <h1 className='about'>About us</h1>
+function AboutUs() { 
+    return (
+        <>
+            
+            <Footer/>
+        </>
+    );
 }
+
+export default AboutUs;
