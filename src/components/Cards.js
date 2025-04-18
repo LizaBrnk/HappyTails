@@ -11,29 +11,29 @@ function Cards() {
             <ul className="cards__items">
                 <CardItem 
                     src="images/welfare-cat.jpg"
-                    text="Together we can change someone's life."
-                    label='Animal'
-                    path='/animals'
+                    text="Help her get back on her feet."
+                    label='Cat needs help'
+                    path='/animal/11'
                 />
                 <CardItem 
                     src="images/not-dog.jpg"
-                    text="Together we can change someone's life."
-                    label='Animal'
-                    path='/animals'
+                    text="Waiting for his family behind the fence."
+                    label='Dog wants to find home'
+                    path='/animal/1'
                 />
             </ul>
             <ul className="cards__items">
                 <CardItem 
                     src="images/shelter-cat.jpg"
-                    text="Together we can change someone's life."
-                    label='Animal'
-                    path='/animals'
+                    text="Dreaming of a house behind this fence."
+                    label='Cat wants to find home'
+                    path='/animal/2'
                 />
                 <CardItem 
                     src="images/dog.jpg"
-                    text="Together we can change someone's life."
-                    label='Animal'
-                    path='/animals'
+                    text="Financial support will provide her with quality treatment."
+                    label='Dog needs help'
+                    path='/animal/22'
                 />
             </ul>
         </div>
