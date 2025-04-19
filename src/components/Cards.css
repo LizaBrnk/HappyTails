@@ -22,14 +22,14 @@
   }
   
   .cards__items {
-    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрування карток */
   }
   
   .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
+    width: calc(50% - 2rem); /* 2 картки в ряд з відступами */
+    margin: 1rem;
   }
   
   .cards__item__link {

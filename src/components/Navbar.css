@@ -47,7 +47,7 @@
   }
   
   .nav-item {
-    height: 115%; 
+    height: 100%; 
     display: flex; 
     align-items: center;
   }
