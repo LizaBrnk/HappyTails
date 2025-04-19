@@ -24,25 +24,15 @@ function Footer() {
         <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
                 <h2>Help Animals</h2>
-                <Link to='/sign-up'>How it works</Link>
-                <Link to='/'>1</Link>
-                <Link to='/'>2</Link>
-                <Link to='/'>3</Link>
-                <Link to='/'>4</Link>
-            </div>
-            <div className='footer-link-items'>
-                <h2>Adopt Animals</h2>
-                <Link to='/sign-up'>How it works</Link>
-                <Link to='/'>1</Link>
-                <Link to='/'>2</Link>
-                <Link to='/'>3</Link>
-                <Link to='/'>4</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/sign-up'>Sign Up</Link>
+                <Link to='/help-animals'>Choose Your Animal</Link>
+                <Link to='/'>Donate</Link>
             </div>
         </div>
         <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
                 <h2>About Us</h2>
-                <Link to='/sign-up'>Sign Up</Link>
                 <Link to='/about#our-mission'>Our Mission</Link>
                 <Link to='/about#our-story'>Our Story</Link>
                 <Link to='/about#our-values'>Our Core Values</Link>
