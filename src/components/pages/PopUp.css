@@ -1,0 +1,123 @@
+/* PopUp.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  /* Змінюємо max-width та max-height на ближчі значення */
+  max-width: 600px;
+  max-height: 550px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.popup-inner {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  /* Займаємо доступний простір по вертикалі, але не більше за max-height */
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden; /* Щоб внутрішні елементи не виходили за межі */
+}
+
+.popup-image {
+  width: 250px; /* Зменшуємо ширину фото, щоб краще вписувалося */
+  max-height: 100%; /* Фото може займати всю доступну висоту popup-inner */
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.popup-details {
+  flex-grow: 1;
+  overflow-y: auto; /* Додаємо прокрутку для довгого тексту */
+}
+
+.popup-description {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.popup-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.donate-button {
+  background-color: #1f98f4;
+  color: white;
+}
+
+.donate-button-link {
+  background-color: #1f98f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.donate-button-link:hover {
+  opacity: 0.9;
+}
+
+.adopt-button-link {
+  background-color: #1f98f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.adopt-button-link:hover {
+  opacity: 0.9; /* Невелика візуальна зворотна дія при наведенні */
+}
+
+.adopt-button {
+  background-color: #1f98f4;
+  color: white;
+}
