@@ -1,0 +1,97 @@
+/* AboutUs.css */
+.about-us-container {
+    padding: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.about-us-container h2 {
+    color: #007bff; /* Голубий колір */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.about-us-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us-container ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us-container li {
+    margin-bottom: 10px;
+}
+
+.mission-section,
+.story-section,
+.values-section,
+.get-involved-section {
+    margin-bottom: 40px;
+}
+
+.values-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-section li {
+    display: flex;
+    align-items: flex-start; /* Вирівнюємо елементи по верхній межі */
+    margin-bottom: 15px;
+}
+
+.values-section li strong {
+    color: #e53b3b; /* Змінений колір на сірий */
+    margin-right: 15px;
+    width: 120px; /* Фіксована ширина для назви цінності */
+    font-weight: bold;
+    text-align: left; /* Вирівнюємо текст назви зліва */
+    flex-shrink: 0; /* Забороняємо стискання назви */
+}
+
+.values-section li span {
+    flex-grow: 1; /* Опис займає залишок простору */
+    text-align: left; /* Вирівнюємо опис зліва */
+}
+
+.get-involved-section {
+    background-color: #f8f9fa; /* Light gray background for emphasis */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.get-involved-section h2 {
+    color: #007bff; /* Голубий колір */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Розміщуємо зображення та підпис вертикально */
+    align-items: center; /* Центруємо елементи по горизонталі */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Додаємо трохи місця під підписом */
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px; /* Невеликий відступ між фото та підписом */
+}
+
+.image-container .caption {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}

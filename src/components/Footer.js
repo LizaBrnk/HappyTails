@@ -43,10 +43,10 @@ function Footer() {
             <div className='footer-link-items'>
                 <h2>About Us</h2>
                 <Link to='/sign-up'>Sign Up</Link>
-                <Link to='/'>1</Link>
-                <Link to='/'>2</Link>
-                <Link to='/'>3</Link>
-                <Link to='/'>4</Link>
+                <Link to='/about#our-mission'>Our Mission</Link>
+                <Link to='/about#our-story'>Our Story</Link>
+                <Link to='/about#our-values'>Our Core Values</Link>
+                <Link to='/about#get-involved'>Get Involved</Link>
             </div>
             <div className='footer-link-items'>
                 <h2>Contact Us</h2>
