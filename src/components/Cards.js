@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
+import PopUp from './pages/PopUp';
 
 function Cards() {
     const [animals, setAnimals] = useState([]);
+    const [selectedAnimal, setSelectedAnimal] = useState(null);
+    const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
     useEffect(() => {
         const fetchAnimals = async () => {
@@ -49,6 +52,16 @@ function Cards() {
         fetchAnimals();
     }, []);
 
+    const openPopUp = (animal) => {
+        setSelectedAnimal(animal);
+        setIsPopUpOpen(true);
+    };
+
+    const closePopUp = () => {
+        setIsPopUpOpen(false);
+        setSelectedAnimal(null);
+    };
+
     // Фільтруємо тварин, залишаючи тільки тих, у кого є фотографії, та беремо перші 4
     const animalsWithPhotos = animals.filter(animal => animal.photos && animal.photos.length > 0).slice(0, 4);
 
@@ -64,12 +77,15 @@ function Cards() {
                                 src={animal.photos[0].full}
                                 text={animal.description || 'No description available'}
                                 label={animal.type}
-                                path={`/animal/${animal.id}`}
+                                onClick={() => openPopUp(animal)} // Додаємо обробник кліку
                             />
                         ))}
                     </ul>
                 </div>
             </div>
+            {isPopUpOpen && (
+                <PopUp animal={selectedAnimal} onClose={closePopUp} />
+            )}
         </div>
     );
 }

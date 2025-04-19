@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CardItem from '../CardItem';
 import '../Cards.css';
 import Footer from '../Footer';
-import PopUp from './PopUp'; // Імпортуємо компонент PopUp
+import PopUp from './PopUp';
 
 function HelpAnimals() {
   const [animals, setAnimals] = useState([]);

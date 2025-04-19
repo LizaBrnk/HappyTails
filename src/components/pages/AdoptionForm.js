@@ -59,16 +59,6 @@ function AdoptionForm() {
       <h1>Application for Adoption</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="fullName">Full Name:</label>
-          <input
-            type="text"
-            id="fullName"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
           <label htmlFor="animalName">Animal's Name:</label>
           <input
             type="text"
@@ -77,6 +67,16 @@ function AdoptionForm() {
             onChange={(e) => setAnimalName(e.target.value)}
             required
             readOnly /* Включаємо атрибут readOnly */
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
           />
         </div>
         <div className="form-group">
