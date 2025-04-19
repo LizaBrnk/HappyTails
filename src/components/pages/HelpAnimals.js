@@ -84,7 +84,7 @@ function HelpAnimals() {
                 <CardItem
                   key={animal.id}
                   src={animal.photos[0].full}
-                  text={animal.description || 'Немає опису'}
+                  text={animal.description || 'No description available'}
                   label={animal.type}
                   path={`/animal/${animal.id}`} // Можете залишити або видалити
                   onClick={() => openPopUp(animal)} // Додаємо обробник кліку безпосередньо на CardItem
