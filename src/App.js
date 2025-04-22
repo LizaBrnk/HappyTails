@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import HelpAnimals from './components/pages/HelpAnimals';
 import AboutUs from './components/pages/AboutUs';
 import SignUp from './components/pages/SignUp';
+import LogIn from './components/pages/LogIn';
 import AdoptionForm from './components/pages/AdoptionForm';
 import DonationForm from './components/pages/DonationForm';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/help-animals' Component={HelpAnimals}/>
           <Route path='/about' Component={AboutUs}/>
           <Route path='/sign-up' Component={SignUp}/>
+          <Route path='/login' Component={LogIn}/>
           <Route path="/adopt" element={<AdoptionForm />} />
           <Route path="/donate" element={<DonationForm />} />
         </Routes>
