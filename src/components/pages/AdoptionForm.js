@@ -14,31 +14,51 @@ function AdoptionForm() {
   const [comment, setComment] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = {
-      fullName,
-      animalName,
-      phone,
-      email,
-      country,
-      city,
-      address,
-      comment,
+        fullName,
+        animalName,
+        phone,
+        email,
+        country,
+        city,
+        address,
+        comment,
     };
-    console.log('Дані для всиновлення:', formData);
-    // Тут ви можете відправити дані на бекенд
-    alert('Вашу заявку на всиновлення надіслано!');
-    // Очистити форму після відправки (опціонально)
-    setFullName('');
-    setAnimalName('');
-    setPhone('');
-    setEmail('');
-    setCountry('');
-    setCity('');
-    setAddress('');
-    setComment('');
-  };
+
+    try {
+        const response = await fetch('http://localhost:3001/api/adopt/apply', { // Відправляємо на новий ендпоінт
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            console.log('Дані для всиновлення надіслано:', data);
+            alert('Вашу заявку на всиновлення надіслано!');
+            setFullName('');
+            setAnimalName('');
+            setPhone('');
+            setEmail('');
+            setCountry('');
+            setCity('');
+            setAddress('');
+            setComment('');
+            navigate('/');
+        } else {
+            console.error('Помилка при відправці даних:', data);
+            alert(data.msg || 'Не вдалося надіслати заявку.');
+        }
+    } catch (error) {
+        console.error('Помилка з\'єднання з сервером:', error);
+        alert('Виникла помилка при відправці заявки.');
+    }
+};
 
   useEffect(() => {
     console.log('Attempting to get from localStorage');
