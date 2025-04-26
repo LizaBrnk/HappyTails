@@ -25,7 +25,7 @@ function HelpAnimals() {
 
         if (!tokenResponse.ok) {
           const errorText = await tokenResponse.text();
-          throw new Error(`Помилка отримання токена: ${tokenResponse.status} ${errorText}`);
+          throw new Error(`Error getting token: ${tokenResponse.status} ${errorText}`);
         }
 
         const tokenData = await tokenResponse.json();
@@ -40,7 +40,7 @@ function HelpAnimals() {
 
         if (!animalsResponse.ok) {
           const errorText = await animalsResponse.text();
-          throw new Error(`Помилка отримання даних про тварин: ${animalsResponse.status} ${errorText}`);
+          throw new Error(`Error getting animal data: ${animalsResponse.status} ${errorText}`);
         }
 
         const animalsData = await animalsResponse.json();
