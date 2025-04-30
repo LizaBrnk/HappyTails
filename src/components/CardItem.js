@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function CardItem(props) {
   const handleClick = (event) => {
-    event.preventDefault(); // Зупиняємо стандартну дію посилання
+    event.preventDefault(); 
     if (props.onClick) {
-      props.onClick(); // Викликаємо переданий обробник onClick
+      props.onClick(); 
     }
   };
 
