@@ -73,6 +73,16 @@ function HelpAnimals() {
     return <div>Error loading animals: {error}</div>;
   }
 
+  if (animalsWithPhotos.length === 0) {
+    return (
+      <div>
+        <h1>
+            It seems all animals have found their forever homes! Check back later.
+        </h1>      
+      </div>
+    );
+  }
+
   return (
     <>
       <div className='cards'>
